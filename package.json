@@ -1,0 +1,19 @@
+{
+  "name": "shadcn-starlight-theme-monorepo",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Showcase Shadcn-based components with the power of Starlight.",
+  "author": "soyluisarrieta",
+  "type": "module",
+  "engines": {
+    "node": "^18.17.1 || ^20.3.0 || >=21.0.0"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "private": true,
+  "homepage": "https://github.com/soyluisarrieta/shadcn-starlight-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soyluisarrieta/shadcn-starlight-theme.git"
+  },
+  "bugs": "https://github.com/soyluisarrieta/shadcn-starlight-theme/issues"
+}
