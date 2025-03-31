@@ -87,3 +87,57 @@
   --sl-color-gray-6: hsl(0, 0%, 94%);
   --sl-color-gray-7: hsl(0, 0%, 97%);
 }
+
+/* Typography and Layout Variables */
+:root,
+::backdrop {
+  --sl-font: sans-serif;
+  --sl-font-mono: monospace;
+  --radius: .625rem;
+  --sl-text-2xs: 0.75rem;
+  --sl-text-xs: 0.8125rem;
+  --sl-text-sm: 0.875rem;
+  --sl-text-base: 1rem;
+  --sl-text-lg: 1.125rem;
+  --sl-text-xl: 1.25rem;
+  --sl-text-2xl: 1.5rem;
+  --sl-text-3xl: 1.875rem;
+  --sl-text-4xl: 3rem;
+  --sl-text-5xl: 2.625rem;
+  --sl-text-6xl: 4rem;
+  --sl-text-body: var(--sl-text-base);
+  --sl-text-body-sm: var(--sl-text-xs);
+  --sl-text-code: var(--sl-text-sm);
+  --sl-text-code-sm: var(--sl-text-xs);
+  --sl-text-h1: var(--sl-text-4xl);
+  --sl-text-h2: var(--sl-text-3xl);
+  --sl-text-h3: var(--sl-text-2xl);
+  --sl-text-h4: var(--sl-text-xl);
+  --sl-text-h5: var(--sl-text-lg);
+  --sl-line-height: 1.75;
+  --sl-line-height-headings: 1.2;
+  --sl-font-system: var(--sl-font);
+  --sl-font-system-mono: var(--sl-font-mono);
+  --__sl-font: var(--sl-font, var(--sl-font-system)),
+    var(--sl-font-system);
+  --__sl-font-mono: var(--sl-font-mono, var(--sl-font-system-mono)),
+    var(--sl-font-system-mono);
+  --sl-nav-height: 3.5rem;
+  --sl-nav-pad-x: 1rem;
+  --sl-nav-pad-y: 0.75rem;
+  --sl-mobile-toc-height: 3rem;
+  --sl-sidebar-width: 16rem;
+  --sl-sidebar-pad-x: 1rem;
+  --sl-content-width: 45rem;
+  --sl-content-pad-x: 1rem;
+  --sl-menu-button-size: 2rem;
+  --sl-nav-gap: var(--sl-content-pad-x);
+  --sl-outline-offset-inside: -0.1875rem;
+  --sl-z-index-toc: 4;
+  --sl-z-index-menu: 5;
+  --sl-z-index-navbar: 10;
+  --sl-z-index-skiplink: 20;
+
+  --block-code-background: hsl(240, 6%, 10%);
+  --block-code-highlight: hsl(240deg 5.26% 26.08% / 50%)
+}
