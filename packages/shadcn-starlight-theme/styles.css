@@ -219,3 +219,118 @@
   scrollbar-width: thin;
   scrollbar-color: var(--sl-color-gray-5) transparent;
 }
+
+/* Base Element Styling */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+:host,
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overscroll-behavior: none;
+  background-color: var(--background);
+  border-color: var(--border);
+  color: hsl(var(--foreground));
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* Header and Navigation Components */
+.header,
+.sidebar-pane,
+#starlight__mobile-toc summary {
+  border-style: dashed;
+}
+
+header.header {
+  background-color: hsl(var(--background-hsl)/.6);
+  backdrop-filter: blur(8px);
+
+  >div.header>div.sl-flex:nth-child(2) {
+    justify-content: end;
+
+    button[aria-label="Search"] {
+      max-width: 16rem;
+    }
+  }
+}
+
+a.site-title {
+  font-weight: 300;
+  color: var(--primary);
+  font-size: 1.14rem;
+}
+
+.dropdown {
+  background-color: var(--popover);
+}
+
+/* Sidebar Navigation */
+#starlight__sidebar ul.top-level {
+  a {
+    color: var(--accent-foreground);
+    font-weight: 500;
+    padding: .4rem .5rem;
+    border-radius: 0.5rem;
+  }
+
+  a:hover,
+  a[aria-current="page"] {
+    background-color: var(--accent);
+  }
+}
+
+@media (min-width: 72rem) {
+  .right-sidebar {
+    border-inline-start: 1px solid var(--border);
+    border-style: dashed;
+  }
+}
+
+/* Main Content Area */
+.main-pane>main {
+  >.content-panel:first-child {
+    border-bottom: 1px dashed var(--border);
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Starlight Tabs */
+starlight-tabs a[role="tab"] {
+  font-size: .875rem;
+}
+
+/* Search Input */
+@media (min-width: 50rem) {
+  site-search button[data-open-modal] {
+    height: 2.2rem;
+    background: var(--sidebar);
+    border-color: var(--sl-color-gray-6);
+    color: var(--muted-foreground);
+
+    svg {
+      margin-bottom: 2px;
+    }
+  }
+
+  site-search button[data-open-modal]:hover {
+    background: var(--sl-color-gray-6);
+    border-color: var(--sl-color-gray-6);
+  }
+}
