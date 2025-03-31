@@ -5,6 +5,7 @@ import shadcnStarlightTheme from 'shadcn-starlight-theme'
 export default defineConfig({
   integrations: [
     starlight({
+      credits: true,
       editLink: {
         baseUrl: 'https://github.com/soyluisarrieta/shadcn-starlight-theme/edit/main/docs/',
       },
@@ -18,7 +19,7 @@ export default defineConfig({
       social: {
         github: 'https://github.com/soyluisarrieta/shadcn-starlight-theme',
       },
-      title: 'shadcn-starlight-theme',
+      title: '@soyluisarrieta/shadcn-starlight-theme',
     }),
   ],
 })
