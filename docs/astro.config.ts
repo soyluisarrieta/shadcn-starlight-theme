@@ -11,9 +11,13 @@ export default defineConfig({
       },
       plugins: [shadcnStarlightTheme()],
       sidebar: [
+        {slug: 'index', label: 'Home'},
         {
           label: 'Start Here',
-          items: [{ slug: 'getting-started' }],
+          items: [
+            { slug: 'getting-started' },
+            { slug: 'examples' },
+          ],
         },
       ],
       social: {
