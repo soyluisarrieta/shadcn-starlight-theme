@@ -6,7 +6,8 @@
   "author": "soyluisarrieta",
   "type": "module",
   "exports": {
-    ".": "./index.ts"
+    ".": "./index.ts",
+    "./styles": "./styles.css"
   },
   "devDependencies": {
     "@astrojs/starlight": "^0.32.5",
