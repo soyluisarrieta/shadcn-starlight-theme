@@ -271,9 +271,10 @@ header.header {
 }
 
 a.site-title {
-  font-weight: 300;
+  font-weight: 700;
   color: var(--primary);
-  font-size: 1.14rem;
+  font-size: 1.05rem;
+  border-radius: 0.6rem;
 }
 
 .dropdown {

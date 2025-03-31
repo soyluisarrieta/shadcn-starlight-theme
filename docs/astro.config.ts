@@ -23,7 +23,7 @@ export default defineConfig({
       social: {
         github: 'https://github.com/soyluisarrieta/shadcn-starlight-theme',
       },
-      title: '@soyluisarrieta/shadcn-starlight-theme',
+      title: '🔳 shadcn starlight theme',
     }),
   ],
 })
